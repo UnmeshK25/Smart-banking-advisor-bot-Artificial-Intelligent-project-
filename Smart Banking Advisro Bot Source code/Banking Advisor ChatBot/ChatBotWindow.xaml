@@ -1,0 +1,17 @@
+﻿<Window x:Class="bankingAdvisorBot.ChatBotWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Resolving User's Queries" Height="400" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="320*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="40*"/>
+        </Grid.RowDefinitions>
+        <TextBox Name="AnswerBox" IsReadOnly="True" />
+        <DockPanel Grid.Row="2">
+            <TextBox Width="450" Name="QueryBox" />
+            <Button Content="Ask Question" Name="Ask_Question" Click="AskQuestion_OnClick"/>
+        </DockPanel>
+    </Grid>
+</Window>
